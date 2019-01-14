@@ -22,12 +22,12 @@ Options:
 
 if (argv.help) {
   console.log(usage)
-  process.exit()
+  process.exit(0)
 }
 
 if (!argv._[0]) {
   error('input file is required')
-  process.exit()
+  process.exit(1)
 }
 
 var input = argv._[0]
